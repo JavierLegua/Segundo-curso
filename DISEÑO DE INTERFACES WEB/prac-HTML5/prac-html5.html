@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Practica Final HTML5 Javier Legua</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 id="arriba">Todo FP</h1>
+        <img src="media/banner-todofp.jpg">
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" target="blank">Inicio</a></li>
+            <li><a href="#" target="blank">Sobre FP</a></li>
+
+            <ul>
+                <li><a href="#">Actualidad</a></li>
+                <li><a href="#">La formación en centros de trabajo</a></li>
+            </ul>
+
+            <li><a href="#" target="blank">Orientación profesional</a></li>
+            <li><a href="#" target="blank">Pruebas y convalidaciones</a></li>
+
+            <ul>
+                <li><a href="#">Pruebas</a></li>
+                <li><a href="#">convalidaciones</a></li>
+            </ul>
+
+            <li><a href="#" target="blank">Acreditación de competencias</a></li>
+        </ul>
+    </nav>
+
+    <article>
+
+        <h2>Técnico Superior en Desarrollo de Aplicaciones Web</h2>
+
+        <h3>¿Qué voy a aprender y hacer?</h3>
+
+        <p>
+            <mark>Desarrollar, implantar, y mantener aplicaciones web </mark>, con independencia del modelo empleado y
+            utilizando tecnologías específicas, garantizando el acceso a los datos de forma segura y cumpliendo los
+            criterios
+            de accesibilidad, usabilidad y calidad exigidas en los estándares establecidos.
+        </p>
+
+        <ol type="I">
+            <li>
+                Configurar y explotar sistemas informáticos, adaptando la configuración lógica del sistema según las
+                necesidades de uso y los criterios establecidos.
+            </li>
+            <li>
+                Aplicar técnicas y procedimientos relacionados con la seguridad en sistemas, servicios y aplicaciones,
+                cumpliendo el plan de seguridad.
+            </li>
+            <li>
+                Gestionar servidores de aplicaciones adaptando su configuración en cada caso para permitir el despliegue
+                de aplicaciones web.
+            </li>
+            <li>
+                Gestionar bases de datos, interpretando su diseño lógico y verificando integridad, consistencia,
+                seguridad y accesibilidad de los datos.
+            </li>
+            <li>
+                Desarrollar aplicaciones web con acceso a bases de datos utilizando lenguajes, objetos de acceso y
+                herramientas de mapeo adecuados a las especificaciones.
+            </li>
+            <li>
+                Integrar contenidos en la lógica de una aplicación web, desarrollando componentes de acceso a datos
+                adecuados a las especificaciones.
+            </li>
+            <li>
+                Desarrollar interfaces en aplicaciones web de acuerdo con un manual de estilo, utilizando lenguajes de
+                marcas y estándares web.
+            </li>
+            <li>
+                Desarrollar componentes multimedia para su integración en aplicaciones web, empleando herramientas
+                específicas y siguiendo las especificaciones establecidas.
+            </li>
+            <li>
+                Integrar componentes multimedia en el interface de una aplicación web, realizando el análisis de
+                interactividad, accesibilidad y usabilidad de la aplicación.
+            </li>
+            <li>
+                Desarrollar e integrar componentes software en el entorno del servidor web, empleando herramientas y
+                lenguajes específicos, para cumplir las especificaciones de la aplicación.
+            </li>
+            <li>
+                Desarrollar servicios para integrar sus funciones en otras aplicaciones web, asegurando su
+                funcionalidad.
+            </li>
+            <li>
+                Integrar servicios y contenidos distribuidos en aplicaciones web, asegurando su funcionalidad.
+            </li>
+        </ol>
+
+    </article>
+
+    <article>
+        <h2>Formulario de matricula</h2>
+        <form action="matricula.php" method="GET">
+            <fieldset>
+                <legend>Datos</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" pattern="[^0-9]" required>
+                <br>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" pattern="[^0-9]" autocomplete="off" required>
+                <br>
+
+                <label for="nacimiento">Fecha nacimiento:</label>
+                <input type="date" name="nacimiento" id="nacimiento" autocomplete="off" min="2004-01-01">
+                <br>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" name="correo" id="correo" autocomplete="off">
+                <br>
+
+                <label for="modulo">Selecciona un módulo:</label>
+                <select name="modulo" id="modulo">
+                    <option value="">--</option>
+                    <option value="SMR">Sistemas microinformáticos y redes (SMR)</option>
+                    <option value="DAW">Desarrollo de aplicaciones web (DAW)</option>
+                    <option value="DAM">Desarrollo de aplicaciones multiplataforma (DAM)</option>
+                </select>
+                <br>
+
+                <label for="curso">Selecciona un curso:</label>
+                <br>
+                <label for="primero">Primer curso</label>
+                <input type="radio" name="primero" id="primero" required>
+                <br>
+                <label for="segundo">Segundo curso</label>
+                <input type="radio" name="Segundo" id="Segundo">
+                <br>
+
+                <label for="convalidaciones">Convalidaciones: </label>
+                <br>
+                <textarea name="convalidaciones" id="convalidaciones" cols="30" rows="10"
+                    placeholder="Escribe aqui tus peticiones de convalidaciones"></textarea>
+                <br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+
+            </fieldset>
+        </form>
+    </article>
+
+    <aside>
+        <br>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Zona Usuarios</legend>
+                <input type="text" name="usuario" id="usuario" placeholder="Usuario" pattern="[^A-Z]">
+                <br>
+                <input type="password" name="contrasena" id="contra" maxlength="10" placeholder="Contraseña">
+                <br>
+                <input type="submit" value="Iniciar Sesión">
+            </fieldset>
+        </form>
+    </aside>
+
+    <article>
+
+        <h2>Número de alumnos</h2>
+
+        <table>
+            <caption>Alumnos curso 2018-2019</caption>
+            <tr>
+                <th colspan="2">Ciclo</th>
+                <th>Curso</th>
+                <th>Alumnos</th>
+            </tr>
+            <tr>
+                <td rowspan="4" colspan="2">Educación Obligatoria</td>
+                <td>1º ESO</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2º ESO</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>3º ESO</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>4º ESO</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="2">Bachillerato</td>
+                <td>1º BTO</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>2º BTO</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td colspan="4">En total: 450 alumnos</td>
+            </tr>
+        </table>
+
+    </article>
+
+    <article>
+    
+    <br>
+
+    <div itemscope itemtype="http://schema.org/Person">
+        <strong>Nombre:</strong> <span itemprop="name">Rafael Nadal</span><br>
+        <strong>Trabajo:</strong> <span itemprop="jobTitle">Tenista profesional, gran persona, amigo de bisbal y de magallon</span>
+    
+    </div>
+    </article>
+
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JtFsGc16QTw" title="YouTube video player"
+        frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+    <br>
+
+    <!--<video src="Feria de la Formación Profesinal Bajo Aragón2018.mp4" width="450" height="250" controls></video>-->
+
+
+
+    <article>
+        <figure>
+            <img src="media/beceite.jpg" alt="" height="500" width="700">
+            <figcaption><a href="http://marioschumacher.com/rios-y-sonrisas-de-la-matarrana-teruel/">Imagen de Mario
+                    Schumacher</a></figcaption>
+        </figure>
+    </article>
+
+    <footer>
+
+        <br>
+        <a href="#arriba">Inicio de la página</a>
+        <p>Práctica HTML5 y multimedia en la Web</p>
+
+    </footer>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="mostrar"></p>
+
+    <script>
+
+        var nombreCompleto = prompt("Dime tu nombre y apellidos");
+        var resultado = "";
+
+        resultado = nombreCompleto.substring(nombreCompleto.indexOf(" ") +1) + ", " + nombreCompleto.substring(0, nombreCompleto.indexOf(" "));
+
+        document.getElementById("mostrar").innerHTML = resultado;
+
+    </script>
+
+</body>
+</html>

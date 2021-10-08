@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+    <p id="mostrar"></p>
+
+    <script>
+        let re = new RegExp('[\\w]*[@]{1}[\\w]*[.]{1}[\\w]*');
+        var correo = prompt("Dime un correo electronico");
+        var usuario = "el usuario es -> ";
+        var dominio = "el dominio es -> ";
+        var resultado = "";
+
+        if (re.test(correo)) {
+
+            var arroba = correo.indexOf("@");
+
+            usuario += correo.substring(0, arroba);
+            resultado += usuario + "<br>";
+
+            dominio += correo.substring(arroba + 1);
+            resultado += dominio;
+
+        } else resultado = "el correo introducido no vale";
+
+        document.getElementById("mostrar").innerHTML = resultado;
+    </script>
+
+</body>
+
+</html>

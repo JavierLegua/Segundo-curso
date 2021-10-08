@@ -1,0 +1,34 @@
+<script>
+
+    var nombre = prompt("Dime tu nombre");
+    var edad = prompt("Dime tu edad");
+    var dia = prompt("Dime el dia de la semana que quieres viajar");
+    var precio = 12.5;
+    var IVA = 0.05;
+    var precioIVA = precio + (precio*IVA);
+    var descuentoEdad = false;
+    var descuentoDia = false;
+
+    if((edad > 18 && edad < 26) || edad > 60){
+
+        var precioDescuentoEdad = precioIVA - (precioIVA * 0.15);
+        document.write("Se te descuenta por estar en el rango de edad adecuado y tu precio con IVA y descuento es: " + precioDescuentoEdad);
+        descuentoEdad = true;
+    }
+
+    if(dia == "miercoles" || dia=="viernes"){
+
+        var precioDescuentoDia = precioIVA - (precioIVA * 0.05);
+        document.write("Se te descuenta por viajar en miercoles o viernes y tu precio con IVA y descuento es: " + precioDescuentoDia);
+        descuentoDia = true;
+    }
+
+    if(descuentoDia == true && descuentoEdad == true){
+
+        var PrecioDescuento =  precioIVA - (precioIVA * 0.20);
+        document.write("Se te descuenta por viajar en miercoles o viernes y estar en el rango de edad y tu precio con IVA y descuento es: " + PrecioDescuento);
+       
+
+    }
+
+</script>

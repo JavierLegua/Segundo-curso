@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="empezar()">Empezar a contar</button>
+    <br><br><br>
+    <button onclick="parar()">Parar</button>
+
+    <p id="mostrar"></p>
+
+    <script>
+
+        var resultado = "";
+
+        var comienzo;
+        var final;
+
+        function empezar() {
+            
+            comienzo = new Date().setMilliseconds(0);
+            document.getElementById("mostrar").innerHTML = "cuenta comenzada";
+
+            return comienzo;
+
+        }
+
+        function parar() {
+            
+            final = new Date().setMilliseconds(0);
+            resultado = "El tiempo transcurrido es de: ";
+            resultado += (final - comienzo)/1000;
+
+            document.getElementById("mostrar").innerHTML = resultado;
+
+        }
+
+    </script>
+
+
+</body>
+</html>

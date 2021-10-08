@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="mostrar"></p>
+
+
+    <script>
+        var resultado = "";
+        resultado += "La fecha actual es: ";
+
+        var fecha = new Date();
+
+        var meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre',
+            'noviembre', 'diciembre'
+        ];
+
+        var dias = ['domingo', 'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado'];
+
+
+
+        resultado += dias[fecha.getDay()] + ", " + fecha.getDate() + " de " + meses[fecha.getMonth()] + " de " + fecha
+            .getFullYear();;
+
+
+        document.getElementById("mostrar").innerHTML = resultado;
+    </script>
+
+
+</body>
+
+</html>

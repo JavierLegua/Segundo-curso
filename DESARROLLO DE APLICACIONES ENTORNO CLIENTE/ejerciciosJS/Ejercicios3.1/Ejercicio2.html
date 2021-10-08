@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H',
+            'L', 'C', 'K', 'E',
+            'T'
+        ];
+        var dni = prompt("Dime un DNI");
+
+        resto = dni % 23;
+        dni = dni + letras[resto];
+        document.write(dni);
+    </script>
+
+</body>
+
+</html>

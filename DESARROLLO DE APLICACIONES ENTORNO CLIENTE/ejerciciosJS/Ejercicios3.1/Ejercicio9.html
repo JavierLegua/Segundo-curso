@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="mostrar"></p>
+
+    <script>
+
+        var frase = prompt("Dime una frase.");
+        var resultado = "";
+        
+        for (let index = 0; index < frase.length; index++) {
+            if (index==0 || frase.substring(index-1, index) == " ") {
+                resultado += frase.substring(index, index+1).toUpperCase();
+            }else resultado += frase.substring(index, index+1).toLowerCase();
+            
+        }
+
+        document.getElementById("mostrar").innerHTML = resultado
+
+
+    </script>
+
+</body>
+</html>

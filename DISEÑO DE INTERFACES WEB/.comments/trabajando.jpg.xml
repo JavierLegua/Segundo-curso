@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comment version="3.0">
+  <caption>usiness people meeting to discuss the situation on the marketing.</caption>
+  <note>Business people meeting to discuss the situation on the marketing in the meeting room. </note>
+  <place/>
+  <categories>
+    <category value="achievement"/>
+    <category value="analysis"/>
+    <category value="analyzing"/>
+    <category value="briefing"/>
+    <category value="closeup"/>
+    <category value="collaboration"/>
+    <category value="computing"/>
+    <category value="contemporary"/>
+    <category value="cooperation"/>
+    <category value="corporate"/>
+    <category value="data"/>
+    <category value="device"/>
+    <category value="digital"/>
+    <category value="female"/>
+    <category value="finance"/>
+    <category value="financial"/>
+    <category value="finger"/>
+    <category value="gadget"/>
+    <category value="hand"/>
+    <category value="high"/>
+    <category value="human"/>
+    <category value="innovation"/>
+    <category value="interaction"/>
+    <category value="lifestyle"/>
+    <category value="male"/>
+    <category value="market"/>
+    <category value="marketing"/>
+    <category value="meeting"/>
+    <category value="modern"/>
+    <category value="multimedia"/>
+    <category value="network"/>
+    <category value="pad"/>
+    <category value="performance"/>
+    <category value="planning"/>
+    <category value="progress"/>
+    <category value="report"/>
+    <category value="results"/>
+    <category value="seminar"/>
+    <category value="solution"/>
+    <category value="strategy"/>
+    <category value="tablet"/>
+    <category value="team"/>
+    <category value="teamwork"/>
+    <category value="tech"/>
+    <category value="technology"/>
+    <category value="touching"/>
+    <category value="touchpad"/>
+    <category value="training"/>
+    <category value="using"/>
+    <category value="workplace"/>
+  </categories>
+</comment>

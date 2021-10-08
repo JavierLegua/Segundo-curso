@@ -1,0 +1,56 @@
+a{
+    display: inline-block;
+    border: solid 1px;
+    padding-left: 5%;
+    
+}
+
+#menu{
+    background-color: #6BADE3;
+    text-align: center;
+    height: 50px;
+
+}
+
+#general{
+
+    text-align: center;
+    background-color: #F4D7BF;
+    height: 500px;
+    
+}
+
+#general1{
+    
+    text-align: center;
+
+}
+
+#generalIzqda{
+
+    border: solid 1px;
+    float: left;
+    width: 49%;
+
+}
+
+#generaldrcha{
+
+    border: solid 1px;
+    float: right;
+    width: 49%;
+
+}
+
+#clear{
+
+    clear: both;
+
+
+}
+
+.columnas{
+
+    columns: 250px 3;
+
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="mostrar"></p>
+
+    <script>
+        var resultado = "";
+
+        var dia = Number.parseInt(prompt("Dime el dia de nacimiento"));
+        var mes = Number.parseInt(prompt("Dime el mes de nacimiento"));
+        var ano = Number.parseInt(prompt("Dime el año de nacimiento"));
+
+        var mesReal;
+
+        var fecha = new Date(ano, mes - 1, dia);
+
+        if ((fecha.getMonth() + 1) < 10) {
+            mesReal = "0" + (fecha.getMonth() + 1);
+        } else mesReal = (fecha.getMonth() + 1);
+
+        var fechaFinal = fecha.getDate() + "-" + mesReal + "-" + fecha.getFullYear();
+
+        resultado = fechaFinal;
+
+        document.getElementById("mostrar").innerHTML = "La fecha de nacimiento es: " + resultado;
+    </script>
+
+</body>
+
+</html>

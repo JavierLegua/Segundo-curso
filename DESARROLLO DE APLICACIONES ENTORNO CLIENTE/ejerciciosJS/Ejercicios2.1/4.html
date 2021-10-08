@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var num1 = 100;
+        var num2 = 25;
+        var resultado;
+        var operacion = prompt("Que operacion quieres hacer", "sumar");
+
+        /**
+         * if(operacion == "sumar"){
+         *      resultado = (num1 + num2);
+         *      document.write(resultado);
+         * } else {
+         *      resultado = (num1 - num2);
+         *      document.write(resultado);
+         * }
+        */
+
+        switch(operacion){
+
+            case "sumar":
+            resultado = (num1 + num2);
+            document.write(resultado);
+            break;
+
+            case "restar": 
+            resultado = (num1 - num2);
+            document.write(resultado);
+            break;
+        }
+
+    </script>
+
+</body>
+</html>
