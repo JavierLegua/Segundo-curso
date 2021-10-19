@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="marcarTodas()">Marcar todos los checkbox</button>
+    <br>
+    <button onclick="desmarcarTodas()">Desmarcar todos los checkbox</button>
+    <br>
+
+    <div id="mostrar"></div>
+
+    <script>
+        var resultado = "";
+
+        for (let i = 0; i < 100; i++) {
+            resultado += "<input type=\"checkbox\" name=\"elemento" + i + "\" id=\"elemento" + i +
+                "\"><label for=\"elemento" + i + "\">Elemento " + (i + 1) + "</label><br>";
+        }
+
+        document.getElementById("mostrar").innerHTML = resultado;
+
+        var arrayCheckbox = document.getElementsByTagName("input");
+
+        function marcarTodas() {
+            for (let i = 0; i < arrayCheckbox.length; i++) {
+                if (arrayCheckbox[i].type == "checkbox") {
+                    arrayCheckbox[i].checked = true;
+                }
+
+            }
+        }
+
+        function desmarcarTodas() {
+            for (let i = 0; i < arrayCheckbox.length; i++) {
+                if (arrayCheckbox[i].type == "checkbox") {
+                    arrayCheckbox[i].checked = false;
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

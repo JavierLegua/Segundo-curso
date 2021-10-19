@@ -1,0 +1,23 @@
+p{
+    font-size: 1.2em;
+}
+
+#pa1{
+    font-family: Arial, Verdana, sans-serif;
+    text-align: justify;
+}
+
+#pa2{
+    font-size: 0.9em;
+    font-family: Times, 'Times New Roman', serif;
+    text-align: right;
+}
+
+#pa2 span{
+    text-transform: uppercase;
+    color: rgb(123, 3, 243);
+}
+
+#pa3{
+text-align: center;
+}
