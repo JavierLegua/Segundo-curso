@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="zonaDestino">
+
+        <img src="imgEjercicio9/papeleraVacia.jpg" alt="">
+
+    </div>
+
+    <div id="cajaImg">
+
+        <img src="imgEjercicio9/bola.jpg" id="bola" alt="">
+
+    </div>
+
+    <script>
+        var img = "";
+
+        function comenzar() {
+
+            var bola = document.addEventListener("dragstart", comenzando_arrastrar, false);
+            var elem_destino = document.getElementById("zonaDestino");
+            elem_destino.addEventListener("dragenter", function (e) {
+                e.preventDefault();
+            }, false);
+            elem_destino.addEventListener("dragover", function (e) {
+                e.preventDefault();
+            }, false);
+            elem_destino.addEventListener("drop", soltado, false);
+
+
+        }
+
+        function comenzando_arrastrar(e) {
+
+            return "imgEjercicio9/papeleraLLena.jpg";
+
+        }
+
+        img = comenzando_arrastrar();
+
+        function soltado(e) {
+            var elem_destino = document.getElementById("zonaDestino");
+            e.preventDefault();
+            var src = document.getElementById("zonaDestino").src;
+            elem_destino.innerHTML = "<img src='" + img + "'>";
+            document.getElementById("bola").remove;
+
+        }
+
+        window.addEventListener("load", comenzar, false);
+    </script>
+
+</body>
+
+</html>

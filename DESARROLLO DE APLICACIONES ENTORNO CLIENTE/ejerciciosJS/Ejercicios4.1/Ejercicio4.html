@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+
+
+        <div id="mostrar"></div>
+
+        <p id="pa1" onclick="ocultar('pa1')" ondblclick="eliminar('pa1')">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus sint necessitatibus sed distinctio voluptatum similique do>
+
+            <p id="pa2" onclick="ocultar('pa2')" ondblclick="eliminar('pa2')">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quos reprehenderit id optio, vero aliquam accusamus dolore recusandae quidem
+                repudiandae, inventore quia modi magnam sit molestias in! Eaque assumenda vero quia!
+
+                <p id="pa3" onclick="ocultar('pa3')" ondblclick="eliminar('pa3')">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Corrupti distinctio ipsam enim dolores culpa! Commodi rem odit, excepturi
+                    laboriosam sit a quidem harum vero. Excepturi voluptatibus tempore at earum fugiat.
+                </p>
+                <button onclick="reaparecer()">Reaparecer</button>
+
+                <script>
+                    function ocultar(id) {
+                        document.getElementById(id).style.display = "none";
+                    }
+
+                    function eliminar(id) {
+                        document.getElementById(id).remove();
+                    }
+
+                    function reaparecer() {
+                        var array = document.getElementsByTagName("p");
+
+
+                        for (let i = 0; i < array.length; i++) {
+                            array[i].style.display = "block";
+
+                        }
+                    }
+                </script>
+
+    </body>
+</body>
+
+</html>
