@@ -1,0 +1,26 @@
+#flex-container {
+    border: solid red 1px;
+    width: 100%;
+}
+
+#flex-container section {
+    width: 33%;
+    float: left;
+    border: solid green 1px;
+}
+
+#flex-container nav {
+    width: 33%;
+    float: left;
+    border: solid yellow 1px;
+}
+
+#flex-container aside {
+    width: 33%;
+    float: left;
+    border: solid blue 1px;
+}
+
+footer {
+    clear: both;
+}

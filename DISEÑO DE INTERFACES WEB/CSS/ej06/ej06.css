@@ -1,0 +1,48 @@
+#flex-container {
+    display: flex;
+}
+
+
+#flex-container nav {
+    order: 1;
+    width: 20%;
+}
+
+#flex-container section {
+    order: 2;
+    width: 60%;
+}
+
+
+
+#flex-container aside {
+    order: 3;
+    width: 20%;
+}
+
+@media only screen and (max-width:576px) {
+
+    #flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #flex-container nav {
+        order: 1;
+        width: 100%;
+    }
+
+    #flex-container section {
+        order: 2;
+        width: 100%;
+    }
+
+    #flex-container aside {
+        order: 3;
+        width: 100%;
+    }
+
+
+
+}
